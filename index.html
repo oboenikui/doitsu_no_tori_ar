@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://www.oboenikui.com/doitsu_no_tori_ar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ドイツのトリAR" />
+    <meta property="og:description" content="ドイツのトリAR 3Dモデル" />
+    <meta property="og:site_name" content="oboenikui.com" />
+    <meta property="og:image" content="https://www.oboenikui.com/doitsu_no_tori_ar/tori_ar_sample.jpg" />
     <title>ドイツのトリAR</title>
     <style>
         body {
             font-family: sans-serif;
         }
+
         .viewer {
             width: 720px;
             height: 640px;
         }
+
         @media screen and (max-width: 720px) {
             .viewer {
                 width: 100%;
@@ -21,7 +29,6 @@
                 aspect-ratio: 9 / 8;
             }
         }
-
     </style>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
@@ -29,14 +36,15 @@
 <body>
     <h1>ドイツのトリAR</h1>
     <h2>看板</h2>
-    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg" src="./signboard.glb" ios-src="./signboard.usdz"
-        alt="看板" auto-rotate camera-controls></model-viewer>
+    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg"
+        src="./signboard.glb" ios-src="./signboard.usdz" alt="看板" auto-rotate camera-controls></model-viewer>
     <h2>アクスタ</h2>
-    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg" src="./acrylic_stand.glb" ios-src="./acrylic_stand.usdz"
-        alt="アクリルスタンド" auto-rotate camera-controls></model-viewer>
+    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg"
+        src="./acrylic_stand.glb" ios-src="./acrylic_stand.usdz" alt="アクリルスタンド" auto-rotate camera-controls>
+    </model-viewer>
     <h2>トリ単体</h2>
-    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg" src="./single.glb" ios-src="./single.usdz"
-        alt="トリ単体" auto-rotate camera-controls></model-viewer>
+    <model-viewer class="viewer" ar ar-modes="scene-viewer webxr quick-look" skybox-image="./olympiapark_hdri.jpg"
+        src="./single.glb" ios-src="./single.usdz" alt="トリ単体" auto-rotate camera-controls></model-viewer>
 </body>
 
 </html>
